@@ -1,0 +1,50 @@
+Are you an admin or customer ?
+1.Admin
+2.customer
+
+1
+
+Please enter username and password  else continue to customer interface by typing continue 
+
+ABC12345
+
+Please enter correct username else continue to customer interface by typing continue 
+Your Entered UserName ABC12345 is incorrect
+Please enter username and password  else continue to customer interface by typing continue 
+
+ABC_12345
+ABC123
+
+Please enter correct username and password else continue to customer interface by typing continue 
+Please enter username and password  else continue to customer interface by typing continue 
+
+ABC_12345
+ABC_123
+
+Hello Admin
+Please choose one of the options
+1.Make ATM out of service
+2.Open Cash Tray
+3.Open Customer Interface 
+
+1
+
+ATM is made out of service
+Hello Admin
+Please choose one of the options
+1.Make ATM out of service
+2.Open Cash Tray
+3.Open Customer Interface 
+
+2
+
+Cash Tray is Opened, Please close it as soon as possible
+Hello Admin
+Please choose one of the options
+1.Make ATM out of service
+2.Open Cash Tray
+3.Open Customer Interface 
+
+3
+
+ATM is out of service, please visit later

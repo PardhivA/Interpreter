@@ -1,0 +1,375 @@
+Are you an admin or customer ?
+1.Admin
+2.customer
+
+2
+
+Hello USER!! Welcome to ABC Bank ATM 
+Please enter your five-digit bank account number
+
+AB102
+
+Welcome Charlie to ABC ATM
+Please enter your PassWord....
+
+BC102
+
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+1
+
+Your Account Balance is :10000.0
+Press 1 to quit or Press 2 to go back to previous menu
+
+2
+
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+2
+
+The following are the available denominations of cash FYI
+              Ten
+              Fifty
+              One_Hundred
+              Five_Hundred
+              Thousand
+Please enter the amount you want to withdraw
+The max limit per transaction is 20,000
+Please withdraw a minimum amount of 10 rupees
+
+5570
+
+Please take 5 Thousand valued notes 
+Please take 1 FiveHundred valued notes 
+Please take 1 Fifty  notes 
+Please take 2 Ten notes 
+Do you need a slip ? Enter 1 if yes else Enter 0
+
+1
+
+Please take slip
+Press 1 to quit or Press 2 to go back to previous menu
+
+2
+
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+2
+
+The following are the available denominations of cash FYI
+              Ten
+              Fifty
+              One_Hundred
+              Five_Hundred
+              Thousand
+Please enter the amount you want to withdraw
+The max limit per transaction is 20,000
+Please withdraw a minimum amount of 10 rupees
+
+2300
+
+Please take 2 Thousand valued notes 
+Please take 3 One Hundred notes 
+Do you need a slip ? Enter 1 if yes else Enter 0
+
+0
+
+Press 1 to quit or Press 2 to go back to previous menu
+
+2
+
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+1
+
+Your Account Balance is :2140.0
+Press 1 to quit or Press 2 to go back to previous menu
+
+2
+
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+2
+
+The following are the available denominations of cash FYI
+              Ten
+              Fifty
+              One_Hundred
+              Five_Hundred
+              Thousand
+Please enter the amount you want to withdraw
+The max limit per transaction is 20,000
+Please withdraw a minimum amount of 10 rupees
+
+5000
+
+Please enter lesser amount, you've crossed your account balance
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+3
+
+No of thousand Notes: 
+
+2
+
+No of Five HundredNotes: 
+
+2
+
+No of One Hundred Notes: 
+
+2
+
+No of Fifty Notes: 
+
+2
+
+No of Ten Notes: 
+
+2
+
+No of One Rupee coins: 
+
+2
+
+No of Two Rupee coins: 
+
+2
+
+No of Five Rupee coins: 
+
+2
+
+Total_Amount Deposited: 3336
+Do you need a slip ? Enter 1 if yes else Enter 0
+
+0
+
+Press 1 to quit or Press 2 to go back to previous menu
+
+2
+
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+1
+
+Your Account Balance is :5476.0
+Press 1 to quit or Press 2 to go back to previous menu
+
+2
+
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+4
+
+What do you want to Edit ? 
+1.Name
+2.Phone Number
+3.Address
+
+1
+
+Please enter the new Name 
+CharlieA
+Name changed successfully
+Press 1 to quit or Press 2 to go back to previous menu
+
+2
+
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+4
+
+What do you want to Edit ? 
+1.Name
+2.Phone Number
+3.Address
+
+2
+
+Please enter the new Phone number
+
+9866285739
+
+Phone number changed successfully
+Press 1 to quit or Press 2 to go back to previous menu
+
+2
+
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+4
+
+What do you want to Edit ? 
+1.Name
+2.Phone Number
+3.Address
+
+3
+
+Please enter the new Address 
+
+houseno:206
+
+Address changed successfully
+Press 1 to quit or Press 2 to go back to previous menu
+
+2
+
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+5
+
+Amount Withdrawn on 2022-10-29T10:21:07.988857500Z is 2300.0
+Amount Withdrawn on 2022-10-29T10:20:52.189496600Z is 5560.0
+Amount Deposited on 2022-10-29T10:21:40.842311Z is 3336.0
+Do you need a slip ? Enter 1 if yes else Enter 0
+
+0
+
+Press 1 to quit or Press 2 to go back to previous menu
+
+2
+
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+1
+
+Your Account Balance is :5476.0
+Press 1 to quit or Press 2 to go back to previous menu
+
+2
+
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+1
+
+Your Account Balance is :5476.0
+Press 1 to quit or Press 2 to go back to previous menu
+
+1
+
+Hello USER!! Welcome to ABC Bank ATM 
+Please enter your five-digit bank account number
+
+AB102
+
+Welcome CharlieA to ABC ATM
+Please enter your PassWord....
+
+BC102
+
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+5
+
+Amount Withdrawn on 2022-10-29T10:21:07.988857500Z is 2300.0
+Amount Withdrawn on 2022-10-29T10:20:52.189496600Z is 5560.0
+Amount Deposited on 2022-10-29T10:21:40.842311Z is 3336.0
+Do you need a slip ? Enter 1 if yes else Enter 0
+
+0
+
+Press 1 to quit or Press 2 to go back to previous menu
+
+1
+
+Hello USER!! Welcome to ABC Bank ATM 
+Please enter your five-digit bank account number
+
+AB100
+
+Welcome Alex to ABC ATM
+Please enter your PassWord....
+
+BC100
+
+Please select one of the options 
+1.View My Balance
+2.WithDrawal amount
+3.Deposit Funds
+4.Edit Profile
+5.View all Transactions
+
+5
+
+Do you need a slip ? Enter 1 if yes else Enter 0
+
+0
+
+Press 1 to quit or Press 2 to go back to previous menu
+
+1
+
+Hello USER!! Welcome to ABC Bank ATM 
+Please enter your five-digit bank account number
