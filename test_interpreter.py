@@ -118,7 +118,11 @@ class InterpreterTestCase(unittest.TestCase):
 VOID MAIN(){
 
   
-   int x = 11;
+   int x;
+   x = 11;
+   double m = 13;
+   int n =13;
+   n = 13-18;
 
 
 
@@ -129,12 +133,17 @@ VOID MAIN(){
         interpreter.interpret()
 
         globals = interpreter.GLOBAL_SCOPE
-        self.assertEqual(len(globals.keys()), 2)
+        self.assertEqual(len(globals.keys()), 4)
         # self.assertEqual(globals['n'], 2)
         # self.assertEqual(globals['a'], 2)
         # self.assertEqual(globals['b'], 40)
         # self.assertEqual(globals['c'], -38)
         self.assertEqual(globals['x'], 11)
+        self.assertEqual(globals['m'], 13)
+        self.assertEqual(globals['n'], -5)
+
+
+        # self.assertEqual(globals['y'], 1)
         # self.assertEqual(globals['m'], 19)
         
 

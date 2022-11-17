@@ -548,13 +548,13 @@ class Parser(object):
         """
         compound_statement: BEGIN statement_list END
         """
-       
+        nodes = []
         self.eat(TokenType.LBRACE)
         while self.current_token.type != TokenType.RBRACE:
             if self.current_token.type in (TokenType.INT, TokenType.DOUBLE):
-                nodes = self.declaration_list()
+                nodes.extend(self.declaration_list())
             else:
-                nodes = self.statement_list()
+                nodes.extend(self.statement_list())
         self.eat(TokenType.RBRACE)
 
         root = Compound()
