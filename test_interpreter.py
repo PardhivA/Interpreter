@@ -8,69 +8,73 @@ class LexerTestCase(unittest.TestCase):
         return lexer
 
     def test_lexer_integer(self):
-        from spi import INTEGER
+        from spi import TokenType
         lexer = self.makeLexer('234')
         token = lexer.get_next_token()
-        self.assertEqual(token.type, INTEGER)
+        self.assertEqual(token.type, TokenType.INT_CONST)
         self.assertEqual(token.value, 234)
 
     def test_lexer_mul(self):
-        from spi import MUL
+        from spi import TokenType
         lexer = self.makeLexer('*')
         token = lexer.get_next_token()
-        self.assertEqual(token.type, MUL)
+        self.assertEqual(token.type, TokenType.MUL)
         self.assertEqual(token.value, '*')
 
     def test_lexer_div(self):
-        from spi import DIV
+        from spi import TokenType
         lexer = self.makeLexer(' / ')
         token = lexer.get_next_token()
-        self.assertEqual(token.type, DIV)
+        self.assertEqual(token.type, TokenType.DIV)
         self.assertEqual(token.value, '/')
         
     def test_lexer_div(self):
-        from spi import MOD
+        from spi import TokenType
         lexer = self.makeLexer('%')
         token = lexer.get_next_token()
-        self.assertEqual(token.type, MOD)
+        self.assertEqual(token.type, TokenType.MOD)
         self.assertEqual(token.value, '%')
 
     def test_lexer_plus(self):
-        from spi import PLUS
+        from spi import TokenType
         lexer = self.makeLexer('+')
         token = lexer.get_next_token()
-        self.assertEqual(token.type, PLUS)
+        self.assertEqual(token.type, TokenType.PLUS)
         self.assertEqual(token.value, '+')
 
     def test_lexer_minus(self):
-        from spi import MINUS
+        from spi import TokenType
         lexer = self.makeLexer('-')
         token = lexer.get_next_token()
-        self.assertEqual(token.type, MINUS)
+        self.assertEqual(token.type, TokenType.MINUS)
         self.assertEqual(token.value, '-')
 
     def test_lexer_lparen(self):
-        from spi import LPAREN
+        from spi import TokenType
         lexer = self.makeLexer('(')
         token = lexer.get_next_token()
-        self.assertEqual(token.type, LPAREN)
+        self.assertEqual(token.type, TokenType.LPAREN)
         self.assertEqual(token.value, '(')
 
     def test_lexer_rparen(self):
-        from spi import RPAREN
+        from spi import TokenType
         lexer = self.makeLexer(')')
         token = lexer.get_next_token()
-        self.assertEqual(token.type, RPAREN)
+        self.assertEqual(token.type, TokenType.RPAREN)
         self.assertEqual(token.value, ')')
 
     def test_lexer_new_tokens(self):
-        from spi import ASSIGN, ID, SEMI, LBRACE, RBRACE
+        from spi import TokenType
         records = (
-            ('=', ASSIGN, '='),
-            ('number', ID, 'number'),
-            (';', SEMI, ';'),
-            ('{', LBRACE, '{'), 
-            ('}', RBRACE, '}')
+            ('=', TokenType.ASSIGN, '='),
+            ('number', TokenType.ID, 'number'),
+            (';', TokenType.SEMI, ';'),
+            ('{', TokenType.LBRACE, '{'), 
+            ('}', TokenType.RBRACE, '}'),
+             ('(', TokenType.LPAREN, '('),
+            (')',TokenType.RPAREN, ')'),
+            ('VOID', TokenType.VOID,'VOID')
+
         )
         for text, tok_type, tok_val in records:
             lexer = self.makeLexer(text)
@@ -93,23 +97,25 @@ class InterpreterTestCase(unittest.TestCase):
             ('5 + 3', 8),
             ('5 +  (3 + 4) - 2', 10),
         ):
-            interpreter = self.makeInterpreter('{ a = %s }' % expr)
+            interpreter = self.makeInterpreter('VOID MAIN(){  a = %s }' % expr)
             interpreter.interpret()
             globals = interpreter.GLOBAL_SCOPE
             self.assertEqual(globals['a'], result)
 
     def test_expression_invalid_syntax1(self):
-        interpreter = self.makeInterpreter('{ a = 10*  ; }')
+        interpreter = self.makeInterpreter(' VOID MAIN(){ a = 10*  ; }')
         with self.assertRaises(Exception):
             interpreter.interpret()
 
     def test_expression_invalid_syntax2(self):
-        interpreter = self.makeInterpreter('{ a = 1 (1 + 2); }')
+        interpreter = self.makeInterpreter('VOID MAIN(){  a = 1 (1 + 2); }')
         with self.assertRaises(Exception):
             interpreter.interpret()
 
     def test_statements(self):
         text = """\
+VOID MAIN()
+
 {
 
     
@@ -117,9 +123,11 @@ class InterpreterTestCase(unittest.TestCase):
         a = number;
         b = 10 * a + 10 * number / 4;
         c = a - b;
+       
 
-
+/*AAA*/
     x = 11;
+
 }
 """
         interpreter = self.makeInterpreter(text)
@@ -132,6 +140,7 @@ class InterpreterTestCase(unittest.TestCase):
         self.assertEqual(globals['b'], 25)
         self.assertEqual(globals['c'], -23)
         self.assertEqual(globals['x'], 11)
+        
 
 
 if __name__ == '__main__':
